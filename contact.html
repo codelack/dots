@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>D.O.T.S. Contact and Info</title>
+<link href="stylesheet.css" rel="stylesheet" type="text/css">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,300italic,700,700italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:700' rel='stylesheet' type='text/css'>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body id="bg" onLoad="MM_preloadImages('images/button2_onstate.png','images/button1_onstate.png')">
+<header> <a href="index.html"><img src="images/logo.png" alt="logo" name="logo" width="381" height="86" id="logo"></a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <nav> <a href="index.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Home','','images/button1_onstate.png',1)"><img src="images/button1_offstate.png" alt="home" width="86" height="86" id="Home"></a> <a href="albums.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Albums','','images/button2_onstate.png',1)"><img src="images/button2_offstate.png" alt="albums" width="86" height="86" id="Albums"></a> <a href="contact.html"><img src="images/button3_normal.png" width="86" height="86" alt="contact"></a></nav>
+</header>
+<div id="container">
+	<article>
+    	<h1>Contact</h1>
+        <hr>
+        <p><strong>Where to find me:</strong><ul>
+        	<li><a href="http://codelack.me" target="_blank">Portfolio website</a> (currently under construction)</li>
+            <li><a href="mailto:coded.kn@gmail.com" target="_top">Email</a> (coded.KN@gmail.com)</li>
+        </ul></p>
+        <h1>Supplemental Info</h1>
+        <hr>
+        <p><strong>Additional info about the things found on this site:</strong><ul>
+        	<li>The background pattern is from an awesome website known as <a href="http://subtlepatterns.com/" target="_blank">Subtle Patterns</a>.</li>
+            <li>The background image (the domino mask) I modeled and rendered in <a href="http://www.blender.org/" target="_blank">Blender</a>.</li>
+            <li>This site in particular uses the Google webfonts <a href="https://www.google.com/fonts/specimen/Open+Sans" target="_blank">Open Sans</a> and <a href="http://www.google.com/fonts/specimen/Roboto+Slab" target="_blank">Roboto Slab</a>. The logo uses the typeface <a href="https://www.behance.net/gallery/3481787/NOUGATINE-free-font" target="_blank">Nougatine</a>.</li>
+            <li>The original code for the CSS3 lightbox gallery comes from Gregory Schier's <a href="http://codepen.io/gschier/pen/HCoqh" target="_blank">awesome post</a>.</li>
+            <li>Disclaimer: The concept of this website is intended purely for fun. None of the covers or albums are actual music albums, nor were they done for any serious reasons. Graphic design is not my career of choice, and therefore, these are just amateur fun-time toys.</li>
+            <li>Lastly, this site was done completely in Adobe Dreamweaver cs6 from conception to finish (with the exception of a <a href="15-0311_dots-mockup.pdf">preliminary Photoshop mockup</a>).</li>
+        </ul></p>
+    </article>
+</div>
+
+<div id="bgimg"><img src="images/bg-mask-crop.png" name="bgimg" width="625" height="374"></div>
+<footer>Website, code, and contents &copy; "DOTS" aka Tabitha Kennedy</footer>
+</body>
+</html>

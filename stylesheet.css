@@ -1,0 +1,154 @@
+@charset "utf-8";
+body {
+	font-family: "Open Sans", Calibri, Arial, Helvetica, sans-serif;
+	background-color: #F5F5EE;
+	background-image: url(images/bg_repeat.png);
+	background-repeat: repeat;
+	background-attachment: fixed;
+}
+/*#bg {
+	
+	background-image: url(images/bg-mask-crop.png);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: left bottom;
+}
+html {
+	background-image: url(images/bg_repeat.png);
+	background-repeat: repeat;
+	background-attachment: fixed;
+	
+	background-image: url(images/bg-mask-crop.png);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: left bottom;
+	
+	background: url(images/bg-mask-crop.png) no-repeat, url(images/bg_repeat.png) repeat;
+}*/
+img {
+	border: none;
+}
+h1 {
+	font-family: "Roboto Slab", Cambria, Georgia, serif;
+	font-weight: 700;
+	font-size: xx-large;
+	color: #3e4158;
+	line-height: 1em;
+}
+b, strong {
+	font-weight: 700;
+}
+#container {
+	margin: 30px auto;
+	z-index: 99;
+	position: relative;
+	clear: both;
+	display: block;
+}
+#container a:link {
+	text-decoration: none;
+	color: #f96;
+	font-weight: 700;
+}
+#container a:visited {
+	color: #f96;
+}
+#container a:hover {
+	color: #3e4158;
+}
+#container a:active {
+	color: ##3e4158;
+}
+header {
+	position: relative;
+	width: 700px;
+	margin: 60px auto;
+	display: block;
+}
+#logo {
+	display: inline-block;
+}
+nav {
+	display: inline-block;
+	right: 0;
+}
+#bgimg {
+	bottom: 0;
+	left: 0;
+	z-index: -1;
+	position: fixed;
+	width: 625px;
+	height: 374px;
+}
+footer {
+	font-size: x-small;
+	color: #999;
+	display: block;
+	margin: 10px;
+	width: 300px;
+	position: fixed;
+	z-index: 10;
+	right: 0px;
+	bottom: 0px;
+}
+
+article p {
+	font-weight: 300;
+	color: #333;
+	font-size: 16px;
+	text-align: justify;
+}
+article ul li {
+	font-weight: 300;
+	color: #333;
+	font-size: 16px;
+}
+article {
+	background-color: white;
+	padding: 10px 30px;
+	width: 500px;
+	margin: 30px auto;
+	position: relative;
+	display: block;
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, .5);
+}
+hr {
+	border: 0;
+	height: 1px;
+	background: #aaa;
+}
+.thumb {
+	margin-right: 40px;
+	margin-bottom: 40px;
+}
+
+/*LIGHTBOX GALLERY*/
+/* code from: http://codepen.io/gschier/pen/HCoqh */
+
+.lightbox {
+	/** Default lightbox to hidden */
+	display: none;
+	/** Position and style */
+	position: fixed;
+	z-index: 999;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	/*overflow: scroll;*/
+}
+.lightbox img {
+	/** Pads the lightbox image */
+	max-height: 90%;
+	width: auto;
+	margin-top: 2%;
+}
+.lightbox:target {
+	/** Removes default browser outline */
+	outline: none;
+	/** Unhides lightbox **/
+	display: block;
+}

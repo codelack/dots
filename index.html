@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>D.O.T.S. Home Page</title>
+<link href="stylesheet.css" rel="stylesheet" type="text/css">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,300italic,700,700italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:700' rel='stylesheet' type='text/css'>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body id="bg" onLoad="MM_preloadImages('images/button3_onstate.png','images/button2_onstate.png')">
+<header> <a href="index.html"><img src="images/logo.png" alt="logo" name="logo" width="381" height="86" id="logo"></a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <nav> <a href="index.html"><img src="images/button1_normal.png" width="86" height="86" alt="home"></a>
+    <a href="albums.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Albums','','images/button2_onstate.png',1)"><img src="images/button2_offstate.png" alt="albums" width="86" height="86" id="Albums"></a> <a href="contact.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Contact','','images/button3_onstate.png',1)"><img src="images/button3_offstate.png" alt="contact" width="86" height="86" id="Contact"></a>
+    </nav>
+</header>
+<div id="container">
+	<article>
+    	<h1>About D.O.T.S.</h1>
+        <hr>
+        <p>“Depending On The Situation” is a fake music artist who has (not)
+released multiple fake albums. This website contains some of
+those albums, featuring their cover art.</p>
+		<p>Most of these <a href="albums.html">covers</a> have been done in Photoshop during leisure
+time, or in other words, just for fun. They have been compiled
+from photos, textures, and art made by the artist herself. They
+serve as copyright-worry-free exercises in graphic design even
+though that is not her career. (That’s why it’s called leisure
+time!)</p>
+		<p>Take a look around and feel at home while you accept D.O.T.S. as
+your new favorite fake music artist!</p>
+    </article>
+</div>
+
+<div id="bgimg"><img src="images/bg-mask-crop.png" name="bgimg" width="625" height="374"></div>
+<footer>Website, code, and contents &copy; "DOTS" aka Tabitha Kennedy</footer>
+</body>
+</html>
